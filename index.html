@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+     <link rel="icon" href="./images/image.png" type="image/svg+xml">
+    <title>Winter</title>
+</head>
+<body>
+    <!-- Navbar Section -->
+     <header class="relative z-20">
+
+   <nav
+      class="flex py-2 px-4 md:px-8 min-h-[68px] relative z-20"
+      aria-label="Main navigation">
+      <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-4 w-full">
+         <a href="#"
+            class="min-w-9 inline-block focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded">
+            <span class="sr-only">Your Company</span>
+            <img src="./images/Logo.png" alt="readymadeui logo" class="h-9 w-auto" />
+         </a>
+
+         <div id="collapseMenu" tabindex="-1"
+            class="hidden lg:block max-lg:bg-white max-lg:border-l max-lg:border-slate-300 max-lg:w-1/2 max-lg:fixed max-lg:top-0 max-lg:right-0 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto max-sm:w-full z-50 outline-none">
+
+            <div
+               class="py-2 px-4 flex justify-between items-center border-b border-slate-300 sticky top-0 bg-white lg:hidden max-lg:min-h-[68px]">
+               <a href="#"
+                  class="inline-block focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded">
+                  <span class="sr-only">Your Company</span>
+                  <img src="./images/Logo.png" alt="readymadeui logo dialog" class="h-9 w-auto" />
+               </a>
+               <button type="button" aria-controls="collapseMenu" id="toggleClose"
+                  class="cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded">
+                  <span class="sr-only">Close main menu</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="size-4 fill-slate-900"
+                     aria-hidden="true" viewBox="0 0 329.269 329">
+                     <path
+                        d="M194.8 164.77 323.013 36.555c8.343-8.34 8.343-21.825 0-30.164-8.34-8.34-21.825-8.34-30.164 0L164.633 134.605 36.422 6.391c-8.344-8.34-21.824-8.34-30.164 0-8.344 8.34-8.344 21.824 0 30.164l128.21 128.215L6.259 292.984c-8.344 8.34-8.344 21.825 0 30.164a21.27 21.27 0 0 0 15.082 6.25c5.46 0 10.922-2.09 15.082-6.25l128.21-128.214 128.216 128.214a21.27 21.27 0 0 0 15.082 6.25c5.46 0 10.922-2.09 15.082-6.25 8.343-8.34 8.343-21.824 0-30.164zm0 0"
+                        data-original="#000000" />
+                  </svg>
+               </button>
+            </div>
+
+            <ul
+               class="flex flex-col gap-8 font-semibold text-sm text-slate-900 lg:flex-row max-lg:p-6">
+               <li>
+                  <a href="#"
+                     class="hover:text-blue-700 text-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded"
+                     aria-current="page">Home</a>
+               </li>
+               <li>
+                  <a href="#about"
+                     class="hover:text-blue-700 text-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded">About</a>
+               </li>
+               <li>
+                  <a href="#categories"
+                     class="hover:text-blue-700 text-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded">Categories</a>
+               </li>
+               <li>
+                  <a href="#collections"
+                     class="hover:text-blue-700 text-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded">Collections</a>
+               </li>
+               <li>
+                  <a href="#contact"
+                     class="hover:text-blue-700 text-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded">Contact</a>
+               </li>
+               
+            </ul>
+         </div>
+
+         <div class="flex items-center gap-4">
+            <img src="./images/Cart.png" alt="cart icon" class="h-10 w-10 cursor-pointer hover:scale-110 transition duration-300" />
+
+            <button type="button" aria-controls="collapseMenu" aria-expanded="false" aria-haspopup="true"
+               id="toggleOpen"
+               class="cursor-pointer lg:hidden focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded">
+               <span class="sr-only">Open main menu</span>
+               <svg class="size-7 fill-slate-900" aria-hidden="true" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                     d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                     clip-rule="evenodd"></path>
+               </svg>
+            </button>
+         </div>
+      </div>
+   </nav>
+</header>
+
+<!-- Hero Section -->
+
+<section id="home" class="text-gray-600 body-font">
+  <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-12 md:pt-5">
+
+    <button class="inline-flex h-15 w-fit max-w-full items-center justify-center whitespace-nowrap bg-linear-to-r from-[#3385FF] to-[#D38CFF] cursor-pointer text-white font-semibold py-2 px-4 sm:px-5 mx-0 sm:mx-30 rounded-full mb-6 transition duration-300 hover:brightness-110 hover:shadow-lg">
+      2026 Collection
+    </button>
+    <div class="flex items-start gap-6 md:gap-10 sm:gap-8 lg:gap-16 flex-col md:flex-row">
+      <div class="order-last mt-6 flex shrink-0 flex-row items-center justify-center gap-6 md:order-first md:mt-40 md:flex-col md:gap-2">
+        <div class="shrink-0 md:relative md:h-17 md:w-8">
+          <h3 class="whitespace-nowrap text-base font-semibold hover:text-blue-500 cursor-pointer md:absolute md:left-1/2 md:top-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:rotate-90 md:text-lg">Twitter</h3>
+        </div>
+        <div class="shrink-0 md:relative md:h-24 md:w-8">
+          <h3 class="whitespace-nowrap text-base font-semibold hover:text-blue-500 cursor-pointer md:absolute md:left-1/2 md:top-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:rotate-90 md:text-lg">Instagram</h3>
+        </div>
+        <div class="shrink-0 md:relative md:h-24 md:w-8">
+          <h3 class="whitespace-nowrap text-base font-semibold hover:text-blue-500 cursor-pointer md:absolute md:left-1/2 md:top-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:rotate-90 md:text-lg">Facebook</h3>
+        </div>
+      </div>
+
+      <div class="flex flex-1 flex-col items-center gap-8 px-10 lg:gap-16 md:flex-row">
+        <div class="flex-1 flex flex-col items-center text-center md:items-start md:text-left">
+          <h1 class="title-font text-2xl sm:text-4xl lg:text-5xl mb-4 font-medium text-gray-900">
+            You should always <br> feel pretty
+          </h1>
+          <p class="mb-8 leading-relaxed ">Clothes that are sure to heat up your winter</p>
+          <img src="./images/Arrow.png" alt="arrow" class="w-25 cursor-pointer hover:scale-110 transition duration-300">
+        </div>
+        <div class="flex-1 w-full max-w-lg">
+          <img class="w-full h-auto object-cover object-center rounded" alt="hero" src="./images/image.png">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<main class="mx-auto max-w-7xl px-6 md:px-12">
+  <section id="about" class="scroll-mt-8 py-16 md:py-24">
+    <div class="mx-auto max-w-3xl text-center">
+      <p class="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-blue-700">About us</p>
+      <h2 class="mb-5 text-3xl font-semibold text-gray-900 sm:text-4xl">Winter style, made to feel like you</h2>
+      <p class="text-lg leading-8 text-gray-600">
+        We believe cold-weather layers can be cozy, confident, and easy to wear. Discover thoughtful pieces
+        designed to help you feel your best all season long.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- Categories Section -->
+  <section id="categories" class="scroll-mt-8 py-12 md:py-16">
+    <div class="mb-8 flex flex-col justify-between gap-3 sm:flex-row sm:items-end">
+      <div>
+        <p class="mb-2 text-sm font-semibold uppercase tracking-[0.2em] text-blue-700">Find your fit</p>
+        <h2 class="text-3xl font-semibold text-gray-900 sm:text-4xl">Shop by category</h2>
+      </div>
+      <p class="max-w-md text-gray-600">Everyday winter essentials to make getting dressed feel effortless.</p>
+    </div>
+    <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      <a href="#collections" class="group overflow-hidden rounded-2xl bg-gradient-to-br from-blue-100 to-violet-100 transition hover:-translate-y-1 hover:shadow-lg">
+        <img src="./images/jacket.jpeg" alt="Model in winter knitwear from the collection" class="h-56 w-full object-contain p-3 transition duration-300 group-hover:scale-105">
+        <div class="p-6">
+          <span class="mb-4 block text-sm font-medium text-blue-800">01 / Layer up</span>
+          <h3 class="text-2xl font-semibold text-gray-900">Coats &amp; jackets</h3>
+          <p class="mt-2 text-gray-600">Warm layers for crisp days.</p>
+          <span class="mt-6 inline-block font-semibold text-blue-800 hover:underline">Explore collection &rarr;</span>
+        </div>
+      </a>
+      <a href="#collections" class="group overflow-hidden rounded-2xl bg-gradient-to-br from-rose-100 to-orange-100 transition hover:-translate-y-1 hover:shadow-lg">
+        <img src="./images/kniwear.jpeg" alt="Model in winter knitwear from the collection" class="h-56 w-full object-contain p-3 transition duration-300 group-hover:scale-105">
+        <div class="p-6">
+          <span class="mb-4 block text-sm font-medium text-rose-800">02 / Stay cozy</span>
+          <h3 class="text-2xl font-semibold text-gray-900">Knitwear</h3>
+          <p class="mt-2 text-gray-600">Soft favorites for every day.</p>
+          <span class="mt-6 inline-block font-semibold text-rose-800 hover:underline">Explore collection &rarr;</span>
+        </div>
+      </a>
+      <a href="#collections" class="group overflow-hidden rounded-2xl bg-gradient-to-br from-emerald-100 to-cyan-100 transition hover:-translate-y-1 hover:shadow-lg sm:col-span-2 lg:col-span-1">
+        <img src="./images/accessories.jpeg" alt="Model in winter knitwear from the collection" class="h-56 w-full object-contain p-3 transition duration-300 group-hover:scale-105">
+        <div class="p-6">
+          <span class="mb-4 block text-sm font-medium text-emerald-800">03 / Finish the look</span>
+          <h3 class="text-2xl font-semibold text-gray-900">Accessories</h3>
+          <p class="mt-2 text-gray-600">The little details that make it yours.</p>
+          <span class="mt-6 inline-block font-semibold text-emerald-800 hover:underline">Explore collection &rarr;</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+
+  <!-- Collections Section -->
+
+  <section id="collections" class="scroll-mt-8 py-16 md:py-24">
+    <div class="grid items-center gap-10 overflow-hidden rounded-3xl bg-white/70 p-6 shadow-sm sm:p-10 md:grid-cols-2 md:p-14">
+      <div>
+        <p class="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-blue-700">The 2026 edit</p>
+        <h2 class="mb-5 text-3xl font-semibold text-gray-900 sm:text-4xl">Meet your new winter favorites</h2>
+        <p class="mb-7 leading-7 text-gray-600">
+          Explore cozy textures, easy layers, and versatile pieces made for the moments that make winter special.
+        </p>
+        <a href="#categories" class="inline-flex rounded-full bg-gray-900 px-6 py-3 font-semibold text-white transition hover:bg-blue-700">
+          Browse categories
+        </a>
+      </div>
+      <img src="./images/collections.avif" alt="Winter fashion collection" class="mx-auto h-72 w-full rounded-2xl object-cover object-center sm:h-96">
+    </div>
+  </section>
+
+
+   <!-- Contact Section -->
+
+  <section id="contact" class="scroll-mt-8 py-16 md:py-20">
+    <div class="rounded-3xl bg-gradient-to-r from-[#3385FF] to-[#D38CFF] px-6 py-12 text-center text-white sm:px-12">
+      <p class="mb-3 text-sm font-semibold uppercase tracking-[0.2em]">Get in touch</p>
+      <h2 class="mb-4 text-3xl font-semibold sm:text-4xl">We'd love to hear from you</h2>
+      <p class="mx-auto max-w-2xl leading-7 text-white/90">
+        Have a question about the collection, sizing, or an order? Get in touch and we'll be happy to help.
+      </p>
+      <form action="#" method="post" class="mx-auto mt-8 max-w-2xl rounded-2xl bg-white p-6 text-left text-gray-900 shadow-xl sm:p-8">
+        <div class="grid gap-5 sm:grid-cols-2">
+          <div>
+            <label for="contact-name" class="mb-2 block text-sm font-semibold">Name</label>
+            <input id="contact-name" name="name" type="text" autocomplete="name" required
+              class="w-full rounded-lg border border-gray-300 px-4 py-3 outline-none transition focus:border-blue-500 focus:ring-2 focus:ring-blue-200">
+          </div>
+          <div>
+            <label for="contact-email" class="mb-2 block text-sm font-semibold">Email</label>
+            <input id="contact-email" name="email" type="email" autocomplete="email" required
+              class="w-full rounded-lg border border-gray-300 px-4 py-3 outline-none transition focus:border-blue-500 focus:ring-2 focus:ring-blue-200">
+          </div>
+        </div>
+        <div class="mt-5">
+          <label for="contact-subject" class="mb-2 block text-sm font-semibold">Subject</label>
+          <input id="contact-subject" name="subject" type="text" required
+            class="w-full rounded-lg border border-gray-300 px-4 py-3 outline-none transition focus:border-blue-500 focus:ring-2 focus:ring-blue-200">
+        </div>
+        <div class="mt-5">
+          <label for="contact-message" class="mb-2 block text-sm font-semibold">Message</label>
+          <textarea id="contact-message" name="message" rows="5" required
+            class="w-full resize-y rounded-lg border border-gray-300 px-4 py-3 outline-none transition focus:border-blue-500 focus:ring-2 focus:ring-blue-200"></textarea>
+        </div>
+        <button type="submit" class="mt-6 w-full cursor-pointer rounded-full bg-gray-900 px-6 py-3 font-semibold text-white transition hover:bg-blue-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 sm:w-auto">
+          Send message
+        </button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<!-- footer section -->
+
+
+<footer class="text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-wrap md:text-left text-center order-first">
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">EXPLORE</h2>
+        <nav class="list-none mb-10">
+          <li>
+            <a href="#home" class="text-gray-600 hover:text-gray-800">Home</a>
+          </li>
+          <li>
+            <a href="#about" class="text-gray-600 hover:text-gray-800">About Us</a>
+          </li>
+          <li>
+            <a href="#categories" class="text-gray-600 hover:text-gray-800">Categories</a>
+          </li>
+          <li>
+            <a href="#collections" class="text-gray-600 hover:text-gray-800">Collections</a>
+          </li>
+        </nav>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">SHOP</h2>
+        <nav class="list-none mb-10">
+          <li>
+            <a href="#categories" class="text-gray-600 hover:text-gray-800">Accessories</a>
+          </li>
+          <li>
+            <a href="#categories" class="text-gray-600 hover:text-gray-800">Knitwear</a>
+          </li>
+          <li>
+            <a href="#categories" class="text-gray-600 hover:text-gray-800">Jackets</a>
+          </li>
+          <li>
+            <a href="#collections" class="text-gray-600 hover:text-gray-800">View Collections</a>
+          </li>
+        </nav>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">HELP</h2>
+        <nav class="list-none mb-10">
+          <li>
+            <a href="#contact" class="text-gray-600 hover:text-gray-800">Contact Us</a>
+          </li>
+          <li>
+            <a href="#contact" class="text-gray-600 hover:text-gray-800">Customer Support</a>
+          </li>
+          <li>
+            <a href="#contact" class="text-gray-600 hover:text-gray-800">Send an Inquiry</a>
+          </li>
+          <li>
+            <a href="#home" class="text-gray-600 hover:text-gray-800">Back to Top</a>
+          </li>
+        </nav>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">SUBSCRIBE</h2>
+        <div class="flex xl:flex-nowrap md:flex-nowrap lg:flex-wrap flex-wrap justify-center items-end md:justify-start">
+          <div class="relative w-40 sm:w-auto xl:mr-4 lg:mr-0 sm:mr-4 mr-2">
+            <label for="footer-field" class="leading-7 text-sm text-gray-600">Placeholder</label>
+            <input type="text" id="footer-field" name="footer-field" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:bg-transparent focus:ring-2 focus:ring-blue-200 focus:border-blue-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+          </div>
+          <button class="cursor-pointer lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded">Button</button>
+        </div>
+        <p class="text-gray-500 text-sm mt-2 md:text-left text-center">Bitters chicharrones fanny pack
+          <br class="lg:block hidden">waistcoat green juice
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="bg-gray-100">
+    <div class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
+      <a href="#home" class="flex cursor-pointer title-font font-medium items-center md:justify-start justify-center text-gray-900">
+
+        <img src="./images/Logo.png" alt="Faryal Razzaq" class="h-10 w-auto">
+      </a>
+    
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+        <a class="text-gray-500 cursor-pointer hover:text-blue-500 transition duration-300">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500 cursor-pointer hover:text-blue-500 transition duration-300">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500 cursor-pointer hover:text-blue-500 transition duration-300">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500 cursor-pointer hover:text-blue-500 transition duration-300">
+          <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+            <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+          </svg>
+        </a>
+      </span>
+       <p class="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">&copy; 2026 Faryal Razzaq. All rights reserved.
+      </p>
+    </div>
+    
+  </div>
+</footer>
+
+
+<script src="script.js"></script>
+    
+</body>
+</html>
